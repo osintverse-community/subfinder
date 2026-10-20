@@ -19,7 +19,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/subfinder@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/subfinder@sha256:328d19287e924c24360bdcc37c0e2fabae684818a0ca84be7c125e9891d1e473
   platforms: [linux/amd64, linux/arm64]
   command: ["subfinder", "-d", "{domain}", "-silent", "-oJ", "-duc"]
   output_format: jsonl
