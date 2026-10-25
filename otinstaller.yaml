@@ -3,7 +3,7 @@
 schema: 1
 name: subfinder
 namespace: osintverse-community
-version: 2.17.1
+version: 2.17.2
 summary: "Finds a domain's subdomains passively from dozens of public sources"
 readme: README.md
 license: MIT
@@ -19,7 +19,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/subfinder@sha256:e557889858fcce3a3e4662f26ad3a3805ca9cc9b5076b69e139bac56f22b8bf7
+  image: ghcr.io/osintverse-community/subfinder@sha256:cfb62285a27dc1ddab32d33b2b0769137ab1e40d2cb0adb9005d38fa01873d44
   platforms: [linux/amd64, linux/arm64]
   command: ["subfinder", "-d", "{domain}", "-silent", "-oJ", "-duc"]
   output_format: jsonl
